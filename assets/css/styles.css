@@ -1469,3 +1469,22 @@ ol {
     from { transform: scale(0.9); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
 }
+.recommended-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.recommended-list li {
+    margin-bottom: 0.4rem;
+}
+
+.recommended-list a {
+    color: var(--color-primary-dark);
+    font-weight: 500;
+}
+
+.recommended-list a:hover {
+    text-decoration: underline;
+}
+
