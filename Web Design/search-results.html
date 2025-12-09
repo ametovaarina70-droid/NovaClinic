@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results – Nova Surgical Center</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+
+
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">
+            <span class="logo-mark">NSC</span>
+            <span class="logo-text">Nova Surgical Center</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Menu">☰</button>
+
+          <div class="language-switcher">
+    <a href="#" class="lang active">EN</a> |
+    <a href="#" class="lang">CZ</a>
+</div>
+
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="doctors.html" class="nav-link">Surgeons</a></li>
+                <li><a href="booking.html" class="nav-link">Book an Appointment</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <form class="site-search" action="search-results.html" method="get" role="search">
+            <input
+                id="global-search"
+                type="search"
+                name="q"
+                class="search-input"
+                placeholder="Search procedures or surgeons"
+                aria-label="Search"
+                required
+            >
+            <button type="submit" class="btn btn--secondary">Search</button>
+        </form>
+    </div>
+</header>
+
+<main class="site-main">
+
+
+
+    <section class="section">
+        <div class="container">
+
+            <header class="section-header">
+                <h1>Search results</h1>
+                <p>Example of a search results page. Results below are generated based on your query.</p>
+            </header>
+
+            <!-- Local search -->
+            <form class="local-search" action="search-results.html" method="get">
+                <input
+                    type="search"
+                    name="q"
+                    placeholder="Search for surgeons, procedures or departments"
+                    aria-label="Search within the site"
+                >
+                <button type="submit" class="btn btn--secondary">Search</button>
+            </form>
+
+            <!-- Query info -->
+            <p class="search-meta">
+                You searched for: <strong>“<span id="search-term">—</span>”</strong>
+            </p>
+
+            <!-- Results go here -->
+            <section id="results-container" class="search-results-list"></section>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div class="footer-column">
+            <h2 class="footer-title">Nova Surgical Center</h2>
+            <p>Fictional surgical clinic created as part of a university student project.  
+               All texts and images are AI-generated.</p>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-subtitle">Navigation</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Surgeons</a></li>
+                <li><a href="booking.html">Book Appointment</a></li>
+                <li><a href="search-results.html">Search</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <aside class="footer-column">
+            <h3 class="footer-subtitle">Project info</h3>
+            <p>Student project — Your Name</p>
+            <p>Web Design / UX — 2025</p>
+        </aside>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+            <p>© 2025 Nova Surgical Center — fictional project.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ========================= -->
+<!-- REAL SEARCH ENGINE        -->
+<!-- ========================= -->
+
+<script>
+// =========================
+// SEARCH DATA (dataset)
+// =========================
+const data = [
+    {
+        title: "Hernia repair – Dr. Michael Hart",
+        type: "Procedure · General & Minimally Invasive Surgery",
+        text: "Surgical repair of inguinal and umbilical hernias using minimally invasive techniques.",
+        keywords: ["hernia", "repair", "michael", "hart", "general surgery"],
+        link: "doctor-michael.html"
+    },
+    {
+        title: "Reconstructive surgery of the abdominal wall",
+        type: "Procedure · Reconstructive Surgery",
+        text: "Complex reconstruction after multiple hernia operations or trauma.",
+        keywords: ["reconstructive", "abdominal", "wall", "surgery"],
+        link: "doctors.html"
+    },
+    {
+        title: "Follow-up consultation after hernia repair",
+        type: "Consultation · Post-operative care",
+        text: "Control examination after surgery.",
+        keywords: ["follow-up", "consultation", "hernia", "post-op"],
+        link: "booking.html"
+    },
+    {
+        title: "Dr. Michael Hart, MD",
+        type: "Surgeon · General & Minimally Invasive Surgery",
+        text: "Specializes in laparoscopic procedures, hernia repair and emergency abdominal surgery.",
+        keywords: ["michael", "hart", "surgeon", "doctor"],
+        link: "doctor-michael.html"
+    },
+    {
+        title: "Dr. Elena Foster, MD",
+        type: "Surgeon · Gastrointestinal & Oncologic Surgery",
+        text: "Specializes in gastrointestinal tumors, colon surgery and oncologic operations.",
+        keywords: ["elena", "foster", "tumor", "oncology", "colon"],
+        link: "doctor-elena.html"
+    },
+    {
+        title: "Dr. Tomas Rivera, MD",
+        type: "Surgeon · Trauma & Emergency Surgery",
+        text: "Specializes in trauma operations, internal bleeding and emergency abdominal surgery.",
+        keywords: ["tomas", "rivera", "trauma", "emergency"],
+        link: "doctor-tomas.html"
+    }
+];
+
+// =========================
+// GET SEARCH TERM
+// =========================
+
+const params = new URLSearchParams(window.location.search);
+const term = (params.get("q") || "").toLowerCase().trim();
+
+// Show the searched term
+document.getElementById("search-term").textContent = term || "—";
+
+const resultsContainer = document.getElementById("results-container");
+
+// =========================
+// FILTER RESULTS
+// =========================
+
+let results = [];
+
+if (term !== "") {
+    results = data.filter(item =>
+        item.title.toLowerCase().includes(term) ||
+        item.text.toLowerCase().includes(term) ||
+        item.keywords.some(k => k.toLowerCase().includes(term))
+    );
+}
+
+// =========================
+// RENDER RESULTS
+// =========================
+
+if (results.length === 0) {
+    resultsContainer.innerHTML = `
+
+
+        <h3>Recommended searches:</h3>
+        <ul class="recommended-list">
+            <li><a href="search-results.html?q=hernia">Hernia repair</a></li>
+            <li><a href="search-results.html?q=laparoscopic">Laparoscopic surgery</a></li>
+            <li><a href="search-results.html?q=hart">Dr. Michael Hart</a></li>
+            <li><a href="search-results.html?q=oncology">Oncologic surgery</a></li>
+            <li><a href="search-results.html?q=trauma">Trauma surgery</a></li>
+        </ul>
+    `;
+} else {
+    resultsContainer.innerHTML = results.map(item => `
+        <article class="card search-result">
+            <h2 class="search-result-title"><a href="${item.link}">${item.title}</a></h2>
+            <p class="search-result-type">${item.type}</p>
+            <p>${item.text}</p>
+        </article>
+    `).join("");
+}
+
+
+</script>
+
+  <script>
+document.querySelector(".nav-toggle").addEventListener("click", () => {
+    document.querySelector(".main-nav").classList.toggle("open");
+});
+</script>
+</body>
+</html>
