@@ -59,7 +59,7 @@
                     </p>
                 </header>
 
-                <form class="booking-form" action="#" method="post">
+                <form class="booking-form" onsubmit="showPopup(event)">
                     <!-- Step 1 -->
                     <section class="form-step" aria-labelledby="step-1-title">
                         <div class="form-step-header">
@@ -344,6 +344,18 @@ document.querySelector(".nav-toggle").addEventListener("click", () => {
     </div>
 </div>
 
+    <script>
+function showPopup(event) {
+    event.preventDefault();
+    document.getElementById("booking-popup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("booking-popup").style.display = "none";
+}
+</script>
+
 </body>
 </html>
+
 
