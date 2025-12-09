@@ -203,7 +203,14 @@ if (term !== "") {
 
 if (results.length === 0) {
     resultsContainer.innerHTML = `
-        <p>No results found for “${term}”. Try another keyword.</p>
+        <h3>Recommended searches:</h3>
+        <ul class="recommended-list">
+            <li><a href="search-results.html?q=hernia">Hernia repair</a></li>
+            <li><a href="search-results.html?q=laparoscopic">Laparoscopic surgery</a></li>
+            <li><a href="search-results.html?q=hart">Dr. Michael Hart</a></li>
+            <li><a href="search-results.html?q=oncology">Oncologic surgery</a></li>
+            <li><a href="search-results.html?q=trauma">Trauma surgery</a></li>
+        </ul>
     `;
 } else {
     resultsContainer.innerHTML = results.map(item => `
@@ -214,6 +221,9 @@ if (results.length === 0) {
         </article>
     `).join("");
 }
+
+
+}
 </script>
 
   <script>
@@ -223,3 +233,4 @@ document.querySelector(".nav-toggle").addEventListener("click", () => {
 </script>
 </body>
 </html>
+
