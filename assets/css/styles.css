@@ -1456,3 +1456,16 @@ ol {
 .recommended-list a:hover {
     text-decoration: underline;
 }
+@media (max-width: 720px) {
+    .nav-list {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        overflow-x: hidden;
+    }
+
+    .nav-link {
+        white-space: normal; /* allow wrapping */
+        font-size: 1rem;
+    }
+}
