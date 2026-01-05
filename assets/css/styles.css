@@ -1447,17 +1447,28 @@ ol {
 }
 
 .about-text h3 {
-  font-size: 1.25rem;      /* ~20px */
+  font-size: 1.7rem;      /* ~20px */
   font-weight: 600;
   letter-spacing: 0;
+    margin-bottom: 0.75rem;
   
 }
 .about-text p {
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 1.7;
   max-width: 42rem;
 }
 
+.about-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.about-actions .btn--primary {
+    box-shadow: none;
+}
 
 .section--about {
   background: #f6f8fb;
