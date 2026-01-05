@@ -1504,7 +1504,6 @@ ol {
   background: #f6f8fb;
 }
 
-
 @media (min-width: 900px) {
   .about-item {
     display: grid;
@@ -1528,3 +1527,4 @@ ol {
     object-fit: cover;
   }
 }
+
