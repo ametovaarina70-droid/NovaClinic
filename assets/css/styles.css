@@ -363,10 +363,9 @@ ol {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-xl);
-}
-
-.hero-content {
-    max-width: 34rem;
+   justify-content: center;   /* горизонталь */
+    align-items: center;       /* вертикаль */
+    min-height: 60vh;
 }
 
 .hero-motto {
@@ -376,15 +375,13 @@ ol {
     letter-spacing: 0.02em;
 }
 
-.hero-image {
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-medium);
-    object-fit: cover;
-}
 .hero-content--center {
     text-align: center;
 }
-
+.hero-content {
+    text-align: center;
+    max-width: none;
+}
 
 /*Cards / generic components */
 
@@ -964,7 +961,7 @@ ol {
         linear-gradient(120deg, rgba(6, 53, 116, 0.55), rgba(10, 90, 216, 0.45)),
         url("../img/hero-banner.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center 30%;
     background-repeat: no-repeat;
     color: #ffffff;
 }
@@ -978,16 +975,10 @@ ol {
 .hero-inner--bg {
     position: relative;
     z-index: 1;
+    min-height: 65vh;
 }
 
 
-.hero-overlay {
-    display: none; 
-}
-
-.hero-inner--bg {
-    position: relative;
-}
 
 .hero-content--light h1 {
     color: #ffffff;
@@ -1008,7 +999,7 @@ ol {
 
 @media (min-width: 720px) {
     .hero-inner--bg {
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .hero-content--light {
@@ -1436,16 +1427,6 @@ ol {
 /* =========================
    About – stacked layout
    ========================= */
-
-   .container--wide {
-  max-width: 1320px;
-}
-
-
-.about-stack {
- max-width: 1320px;
-  margin: 0 auto;
-}
 
 .about-item {
   padding: 3rem 0;
