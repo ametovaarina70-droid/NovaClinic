@@ -1474,50 +1474,57 @@ ol {
    About – stacked layout
    ========================= */
 
+   .container--wide {
+  max-width: 1320px;
+}
+
+
 .about-stack {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
 }
 
 .about-item {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md);
-    background: var(--color-surface);
-    padding: var(--spacing-xl);
-    border-radius: var(--radius-lg);
-    border: 1px solid rgba(148, 163, 184, 0.15);
-    box-shadow: var(--shadow-soft);
+  display: grid;
+  grid-template-columns: 1fr; /* mobile */
+  gap: var(--spacing-md);
+  background: var(--color-surface);
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  box-shadow: var(--shadow-soft);
 }
 
 .about-item img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    border-radius: var(--radius-md);
+  width: 100%;              /* ВАЖНО */
+  height: 320px;            /* крупнее */
+  object-fit: cover;
+  object-position: 50% 35%;
+  border-radius: var(--radius-md);
 }
 
 .about-text h3 {
-    margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
 }
+
 @media (min-width: 900px) {
-    .about-item {
-        flex-direction: row;
-        align-items: center;
-        gap: var(--spacing-xl);
-    }
+  .about-item {
+    grid-template-columns: 45% 55%; /* карточка шире за счёт колонки */
+    align-items: center;
+    gap: 2.5rem; /* меньше пустоты */
+  }
 
-    .about-item:nth-child(even) {
-        flex-direction: row-reverse;
-    }
+  .about-item:nth-child(even) {
+    grid-template-columns: 55% 45%;
+  }
 
-    .about-text {
-        flex: 1;
-    }
+  .about-text {
+    max-width: none; /* чтобы текст не "сжимался" */
+  }
 
-    .about-item img {
-        width: 45%;
-        height: 260px;
-    }
+  .about-item img {
+    height: 380px; /* фото реально большое */
+    border-radius: var(--radius-lg);
+  }
 }
