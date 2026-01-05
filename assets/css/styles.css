@@ -1480,20 +1480,13 @@ ol {
 
 
 .about-stack {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-2xl);
+ max-width: 1320px;
+  margin: 0 auto;
 }
 
 .about-item {
-  display: grid;
-  grid-template-columns: 1fr; /* mobile */
-  gap: var(--spacing-md);
-  background: var(--color-surface);
-  padding: 2.5rem;
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(148, 163, 184, 0.15);
-  box-shadow: var(--shadow-soft);
+  padding: 3rem 0;
+  
 }
 
 .about-item img {
@@ -1507,24 +1500,31 @@ ol {
 .about-text h3 {
   margin-bottom: var(--spacing-xs);
 }
+.section--about {
+  background: #f6f8fb;
+}
+
 
 @media (min-width: 900px) {
   .about-item {
-    grid-template-columns: 45% 55%; /* карточка шире за счёт колонки */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 3rem;
     align-items: center;
-    gap: 2.5rem; /* меньше пустоты */
   }
 
   .about-item:nth-child(even) {
-    grid-template-columns: 55% 45%;
+    direction: rtl;
   }
 
-  .about-text {
-    max-width: none; /* чтобы текст не "сжимался" */
+  .about-item:nth-child(even) > * {
+    direction: ltr;
   }
 
   .about-item img {
-    height: 380px; /* фото реально большое */
-    border-radius: var(--radius-lg);
+    width: 100%;
+    height: 420px;
+    border-radius: 2rem;
+    object-fit: cover;
   }
 }
