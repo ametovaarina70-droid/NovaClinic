@@ -1469,3 +1469,55 @@ ol {
         font-size: 1rem;
     }
 }
+
+/* =========================
+   About – stacked layout
+   ========================= */
+
+.about-stack {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+}
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    background: var(--color-surface);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    box-shadow: var(--shadow-soft);
+}
+
+.about-item img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+}
+
+.about-text h3 {
+    margin-bottom: var(--spacing-xs);
+}
+@media (min-width: 900px) {
+    .about-item {
+        flex-direction: row;
+        align-items: center;
+        gap: var(--spacing-xl);
+    }
+
+    .about-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .about-text {
+        flex: 1;
+    }
+
+    .about-item img {
+        width: 45%;
+        height: 260px;
+    }
+}
