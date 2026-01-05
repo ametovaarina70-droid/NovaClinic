@@ -369,29 +369,11 @@ ol {
     max-width: 34rem;
 }
 
-.hero-subtitle {
+.hero-motto {
     margin-top: var(--spacing-sm);
     font-size: var(--font-size-lg);
-    color: var(--color-text-muted);
-}
-
-.hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing-sm);
-    margin-top: var(--spacing-md);
-}
-
-.hero-highlights {
-    margin-top: var(--spacing-md);
-    padding-left: 1.2rem;
-    color: var(--color-text);
-}
-
-.hero-aside {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md);
+    color: #e5ecff;
+    letter-spacing: 0.02em;
 }
 
 .hero-image {
@@ -399,29 +381,10 @@ ol {
     box-shadow: var(--shadow-medium);
     object-fit: cover;
 }
-
-.hero-aside-card {
-    background-color: var(--color-surface);
-    border-radius: var(--radius-lg);
-    padding: var(--spacing-md);
-    box-shadow: var(--shadow-soft);
+.hero-content--center {
+    text-align: center;
 }
 
-.clinic-stats {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: var(--spacing-sm);
-    font-size: var(--font-size-sm);
-}
-
-.clinic-stats strong {
-    display: block;
-    font-size: var(--font-size-lg);
-    color: var(--color-primary-dark);
-}
 
 /*Cards / generic components */
 
