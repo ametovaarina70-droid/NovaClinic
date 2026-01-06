@@ -1556,6 +1556,11 @@ body {
     margin-top: 3rem;
 }
 
+.service-main {
+  max-width: 720px;
+}
+
+
 .service-main h2 {
     font-size: 1.35rem;
     margin-top: 2.5rem;
@@ -1576,74 +1581,58 @@ body {
 }
 
 .service-box {
-    background: #ffffff;
-    padding: 2.5rem;
-    border-radius: 24px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  background: #1e5eff;
+  color: #ffffff;
+  padding: 3rem 2.5rem;
+  border-radius: 24px;
 }
 
-
 .service-box h3 {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .service-box ul {
-    padding-left: 1.2rem;
-    margin-bottom: 1.5rem;
+  list-style: none;
+  padding: 0;
 }
 
 .service-box li {
-    margin-bottom: 0.4rem;
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
-/* Service intro panel */
-
-.service-intro {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    max-width: 880px;
-    margin: 2rem auto 3rem;
-    padding: 1.5rem 2rem;
-    background: #ffffff;
-    border-radius: 18px;
-    border: 1px solid #e2e8f0;
+.procedure-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e5e7eb;
 }
 
-.intro-item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
+.procedure-meta {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #374151;
 }
 
-.intro-item strong {
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #64748b;
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
-.intro-item span {
-    font-size: 0.95rem;
-    line-height: 1.4;
-    color: #0f172a;
-    max-width: 22ch; /* 🔥 КЛЮЧ */
+.step-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
 }
 
-
-@media (max-width: 720px) {
-  .service-intro {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .intro-item span {
-    max-width: none;
-  }
-}
 
 /* =========================
    What we treat – cards
@@ -1673,5 +1662,33 @@ body {
 @media (max-width: 900px) {
   .service-layout {
     grid-template-columns: 1fr;
+  }
+}
+
+.service-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1120px;
+  margin: 2rem auto 3rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+
+.service-meta span {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+}
+@media (max-width: 720px) {
+  .service-meta {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
