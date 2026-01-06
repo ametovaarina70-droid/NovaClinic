@@ -1457,8 +1457,11 @@ ol {
    ========================= */
 
 .about-item {
-  padding: 3rem 0;
+  padding: 0;
   
+}
+main {
+  background-color: var(--color-bg);
 }
 
 .about-item img {
