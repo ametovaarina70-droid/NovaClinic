@@ -1,185 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>General Surgery | Nova Surgical Center</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>General Surgery | NovaClinic</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../services.css">
 </head>
+
 <body>
 
-    <header class="site-header">
-        <div class="container header-inner">
-            <a href="../index.html" class="logo">
-                <span class="logo-mark">NSC</span>
-                <span class="logo-text">Nova Surgical Center</span>
-            </a>
-
-            <button class="nav-toggle" aria-label="Menu">☰</button>
-
-
-              <div class="language-switcher">
-    <a href="#" class="lang active">EN</a> |
-    <a href="#" class="lang">CZ</a>
-</div>
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li><a href="../index.html" class="nav-link">Home</a></li>
-                  <li><a href="../doctors.html" class="nav-link">Surgeons</a></li>
-<li><a href="../booking.html" class="nav-link">Book an Appointment</a></li>
-<li><a href="../contact.html" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
-
-         <form class="site-search" action="../search-results.html">
-
-                <label class="visually-hidden" for="global-search">Search on this site</label>
-                <input
-                    id="global-search"
-                    type="search"
-                    name="q"
-                    class="search-input"
-                    placeholder="Search procedures or surgeons"
-                    aria-label="Search"
-                    required
-                >
-                <button type="submit" class="btn btn--secondary">Search</button>
-            </form>
-        </div>
-    </header>
-
-<main id="main-content">
-
-<section class="section">
-  <div class="container">
-        <div class="steps-grid">
-  <div class="step-card">
-    <span>1</span>
-    <h4>Consultation</h4>
-    <p>Comprehensive evaluation and diagnosis</p>
+<!-- HEADER (скопирован с главной, пути исправлены) -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo">NovaClinic</a>
+    <nav class="main-nav">
+      <a href="../index.html">Home</a>
+      <a href="../doctors.html">Surgeons</a>
+      <a href="../booking.html">Book</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
   </div>
-  <div class="step-card">
-    <span>2</span>
-    <h4>Surgery</h4>
-    <p>Performed by experienced surgeons</p>
-  </div>
-  <div class="step-card">
-    <span>3</span>
-    <h4>Follow-up</h4>
-    <p>Post-operative care and monitoring</p>
-  </div>
-</div>
+</header>
 
+<main class="container">
 
-   
-
-    <header class="section-header">
-      <h1>General Surgery</h1>
-      <p>Comprehensive surgical care for common and complex conditions.</p>
-
-<div class="service-meta">
-  <div><span>Specialty</span> General & abdominal surgery</div>
-  <div><span>Techniques</span> Minimally invasive laparoscopic</div>
-  <div><span>Recovery</span> Short hospital stay, faster healing</div>
-</div>
-    </header>
-
-
-   <div class="service-layout">
-
-  <div class="service-main">
-    <h2>What we treat</h2>
-    <div class="treat-grid">
-  <div class="treat-card">Hernia repair</div>
-  <div class="treat-card">Appendectomy</div>
-  <div class="treat-card">Gallbladder surgery</div>
-  <div class="treat-card">Soft tissue surgery</div>
-</div>
-
-
-    <h2>Our approach</h2>
+  <!-- HERO -->
+  <section class="service-hero">
+    <h1>General Surgery</h1>
     <p>
-      Our surgeons focus on safe, evidence-based procedures with an emphasis
-      on minimally invasive techniques whenever possible.
+      Comprehensive surgical care for common and complex conditions using
+      advanced minimally invasive techniques.
     </p>
+  </section>
+
+  <!-- META LINE (как в Figma) -->
+  <div class="service-meta">
+    <div><span>Specialty</span> General & abdominal surgery</div>
+    <div><span>Techniques</span> Minimally invasive laparoscopic</div>
+    <div><span>Recovery</span> Short hospital stay, faster healing</div>
   </div>
 
-  <aside class="service-aside">
-    <div class="service-box">
-      <h3>Key information</h3>
+  <!-- MAIN LAYOUT -->
+  <section class="service-layout">
+
+    <!-- LEFT -->
+    <div class="service-main">
+
+      <h2>About this service</h2>
+      <p>
+        General surgery addresses a wide range of conditions affecting the abdomen,
+        digestive system, endocrine system, and soft tissues.
+      </p>
+      <p>
+        Our experienced surgical team focuses on safe, evidence-based procedures
+        with an emphasis on minimally invasive techniques.
+      </p>
+
+      <h2>Procedures we perform</h2>
+
+      <div class="procedure-card">
+        <h3>Hernia repair</h3>
+        <p>Surgical repair of abdominal wall hernias using mesh reinforcement</p>
+        <div class="procedure-meta">
+          <span>⏱ 1–2 hours</span>
+          <span>✔ 2–4 weeks recovery</span>
+        </div>
+      </div>
+
+      <div class="procedure-card">
+        <h3>Appendectomy</h3>
+        <p>Emergency or planned removal of inflamed appendix</p>
+        <div class="procedure-meta">
+          <span>⏱ 30–60 min</span>
+          <span>✔ 1–3 weeks recovery</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDEBAR (ОДИН) -->
+    <aside class="service-sidebar">
+      <h3>Book a consultation</h3>
+      <p>
+        Schedule an appointment with our surgical team to discuss your condition
+        and treatment options.
+      </p>
+
       <ul>
-        <li>Experienced surgical team</li>
-        <li>Modern operating rooms</li>
-        <li>Individual patient care</li>
-        <li>Short recovery time</li>
+        <li>✔ Experienced surgical team</li>
+        <li>✔ Modern operating rooms</li>
+        <li>✔ Individual patient care</li>
+        <li>✔ Short recovery time</li>
       </ul>
 
-      <a href="../booking.html" class="btn btn--primary">
-        Book a consultation
+      <a href="../booking.html" class="btn-primary">
+        Schedule Appointment
       </a>
+    </aside>
+
+  </section>
+
+  <!-- WHAT TO EXPECT -->
+  <section class="service-steps">
+    <h2>What to expect</h2>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <span>1</span>
+        <h4>Consultation</h4>
+        <p>Comprehensive evaluation and diagnosis</p>
+      </div>
+
+      <div class="step-card">
+        <span>2</span>
+        <h4>Surgery</h4>
+        <p>Performed by experienced surgeons</p>
+      </div>
+
+      <div class="step-card">
+        <span>3</span>
+        <h4>Follow-up</h4>
+        <p>Post-operative care and monitoring</p>
+      </div>
     </div>
-  </aside>
-
-</div>
-
-
-  </div>
-</section>
-
-
+  </section>
 
 </main>
 
-   <footer class="site-footer">
-        <div class="container footer-inner">
-            <div class="footer-column">
-                <h2 class="footer-title">Nova Surgical Center</h2>
-                <p>
-                    Fictional surgical clinic created as part of a university student project.
-                    All texts and images are AI-generated for educational purposes only.
-                </p>
-            </div>
-
-            <div class="footer-column">
-                <h3 class="footer-subtitle">Navigation</h3>
-                <ul class="footer-links">
-                <li><a href="../index.html">Home</a></li>
-<li><a href="../doctors.html">Surgeons</a></li>
-<li><a href="../booking.html">Book an Appointment</a></li>
-<li><a href="../search-results.html">Search</a></li>
-<li><a href="../contact.html">Contact</a></li>
-
-                </ul>
-            </div>
-
-    
-
-            <div class="footer-column">
-                <h3 class="footer-subtitle">Contact</h3>
-                <p>Green Avenue 12, Prague</p>
-                <p>Phone: <a href="tel:+420123456789">+420 123 456 789</a></p>
-                <p>Email: <a href="mailto:info@novasurgery.cz">info@novasurgery.cz</a></p>
-                <p>Opening hours: Mon–Fri 8:00–18:00</p>
-            </div>
-
-            <aside class="footer-column" aria-label="Project information">
-                <h3 class="footer-subtitle">Project info</h3>
-                <p>Student project – <span class="author-name">Adelina Abdyvalieva, Ametova Arina, Akimzhan Nurbolot, Tolonov Bekzhan</span></p>
-                <p>Course: Web Design / UX</p>
-                <p>Year: 2025</p>
-            </aside>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="container footer-bottom-inner">
-                <p>© 2025 Nova Surgical Center (fictional). All rights reserved.</p>
-                <p class="footer-note">
-                    This website is a non-commercial prototype created for educational purposes.
-                </p>
-            </div>
-        </div>
-    </footer>
-
+<!-- FOOTER (скопирован с главной, пути исправлены) -->
+<footer class="site-footer">
+  <div class="container">
+    <p>© Nova Surgical Center · Educational project 2025</p>
+  </div>
+</footer>
 
 </body>
 </html>

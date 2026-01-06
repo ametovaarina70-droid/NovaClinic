@@ -1,0 +1,120 @@
+/* =========================
+   Service pages (NEW)
+========================= */
+
+.service-hero {
+  max-width: 720px;
+  margin: 3rem 0 2rem;
+}
+
+.service-hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.75rem;
+}
+
+/* META LINE */
+.service-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 3rem;
+}
+
+.service-meta span {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+}
+
+/* MAIN LAYOUT */
+.service-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+}
+
+.service-main {
+  max-width: 720px;
+}
+
+.service-main h2 {
+  margin: 2.5rem 0 1rem;
+}
+
+/* PROCEDURES */
+.procedure-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.procedure-meta {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+}
+
+/* SIDEBAR */
+.service-sidebar {
+  background: #1e5eff;
+  color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 24px;
+}
+
+.service-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.service-sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+/* STEPS */
+.service-steps {
+  margin: 4rem 0;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.step-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+}
+
+.step-card span {
+  font-weight: 700;
+  color: #1e5eff;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .service-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .service-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+}
