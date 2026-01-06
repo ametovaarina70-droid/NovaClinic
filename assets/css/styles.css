@@ -368,7 +368,7 @@ ol {
     flex-direction: column;
     gap: var(--spacing-xl);
    justify-content: center;   /* горизонталь */
-    align-items: center;       /* вертикаль */
+    align-items: flex-start;       /* вертикаль */
     min-height: 60vh;
 }
 
@@ -382,6 +382,7 @@ ol {
 
 .hero-content--center {
     text-align: center;
+    margin: 0 auto;
 }
 .hero-content {
     text-align: center;
@@ -420,8 +421,6 @@ ol {
 }
 
 /*  Services – GRID LAYOUT */
-
-
 
 
 
@@ -597,22 +596,6 @@ ol {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
- .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: var(--spacing-lg);
-    align-items: start; /* КЛЮЧ */
-}
-@media (min-width: 900px) {
-    .services-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    
-    }
-    .service-card--wide h3 {
-    color: var(--color-primary-dark);
-    font-size: 1.25rem;
-}
-
 .service-card {
     background-color: var(--color-surface);
     border-radius: 16px;
@@ -624,6 +607,18 @@ ol {
     flex-direction: column;
     height: 100%;
 }
+
+@media (min-width: 900px) {
+    .services-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    
+    }
+    .service-card--wide h3 {
+    color: var(--color-primary-dark);
+    font-size: 1.25rem;
+}
+
+
 
 
 .service-card h3 {
@@ -711,9 +706,7 @@ ol {
         font-size: 2.75rem;
     }
 
-    .hero {
-        padding-top: var(--spacing-3xl);
-    }
+
 }
 /* =========================
    Surgeons list page
@@ -1019,7 +1012,7 @@ ol {
 
 .hero--bg {
     position: relative;
-    padding-top: var(--spacing-3xl);
+   
     padding-bottom: var(--spacing-3xl);
     background-image:
         linear-gradient(120deg, rgba(6, 53, 116, 0.55), rgba(10, 90, 216, 0.45)),
@@ -1510,13 +1503,16 @@ main {
   }
 
   .about-item:nth-child(even) {
-    direction: rtl;
-  }
+  grid-template-columns: 50% 50%;
+}
 
-  .about-item:nth-child(even) > * {
-    direction: ltr;
-  }
+.about-item:nth-child(even) .about-text {
+    order: 2;
+}
 
+.about-item:nth-child(even) img {
+    order: 1;
+}
   .about-item img {
     width: 100%;
     height: 420px;
@@ -1524,4 +1520,7 @@ main {
     object-fit: cover;
   }
 }
+}
+.container {
+    outline: 1px solid red;
 }
