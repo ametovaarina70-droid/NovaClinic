@@ -1536,144 +1536,12 @@ main {
     margin-bottom: 2rem;
 }
 
-/* =========================
-   Service detail pages
-========================= */
-
-
-
-.service-detail {
-    max-width: 48rem;
-}
-
-.service-detail h2 {
-    font-size: 1.25rem;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-    color: #0f172a;
-}
-
-.service-detail p {
-    line-height: 1.7;
-    color: #475569;
-    margin-bottom: 1.25rem;
-}
-
-.service-detail ul {
-    padding-left: 1.25rem;
-    margin-bottom: 1.5rem;
-}
-
-.service-detail li {
-    margin-bottom: 0.5rem;
-    color: #334155;
-}
-
-.service-detail .btn {
-    margin-top: 2rem;
-}
-
 
 .breadcrumbs a:hover {
     text-decoration: underline;
 }
 
-.service-detail {
-    max-width: 52rem;
-}
 
-.service-detail h2 {
-    font-size: 1.35rem;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-}
-
-.service-detail ul {
-    background: #f8fafc;
-    padding: 1.5rem 2rem;
-    border-radius: 16px;
-    margin-bottom: 2rem;
-}
-
-.service-detail li {
-    margin-bottom: 0.6rem;
-}
-
-
-.service-detail .btn {
-    margin-top: 2rem;
-}
-/* =========================
-   Service hero image
-========================= */
-
-.service-hero {
-    margin: 3rem 0;
-}
-
-.service-hero img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    display: block;
-}
-/* === Service page hero improvement === */
-
-.section-header {
-    max-width: 56rem;
-    margin-bottom: 2rem;
-}
-
-.section-header h1 {
-    font-size: 2.4rem;
-    margin-bottom: 0.75rem;
-}
-
-.section-header p {
-    font-size: 1.05rem;
-    color: #475569;
-}
-
-/* image becomes main visual anchor */
-.service-hero {
-    margin: 2.5rem 0 3.5rem;
-}
-
-.service-hero img {
-    border-radius: 24px;
-    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
-}
-.service-detail {
-    max-width: 52rem;
-}
-
-.service-detail h2 {
-    font-size: 1.35rem;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-}
-
-.service-detail ul {
-    background: #f8fafc;
-    padding: 1.5rem 2rem;
-    border-radius: 16px;
-    margin-bottom: 2rem;
-}
-
-.service-detail li {
-    margin-bottom: 0.6rem;
-}
-.section--cta {
-    background: linear-gradient(
-        180deg,
-        #f8fafc 0%,
-        #eef2ff 100%
-    );
-}
-
-.service-cta {
-    border-left: 6px solid #2563eb;
-}
 body {
     -webkit-font-smoothing: antialiased;
 }
@@ -1736,96 +1604,47 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin: 2.5rem 0 3.5rem;
-    padding: 2rem;
-    background: #f8fafc;
-    border-radius: 20px;
+    max-width: 880px;
+    margin: 2rem auto 3rem;
+    padding: 1.5rem 2rem;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #e2e8f0;
+}
+
+.intro-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
 }
 
 .intro-item strong {
-    display: block;
-    font-size: 0.75rem;
-    letter-spacing: 0.04em;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #64748b;
-    margin-bottom: 0.4rem;
 }
 
 .intro-item span {
     font-size: 0.95rem;
+    line-height: 1.4;
     color: #0f172a;
-}
-.service-main h2 {
-    position: relative;
-    padding-left: 1rem;
+    max-width: 22ch; /* 🔥 КЛЮЧ */
 }
 
-.service-main h2::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.3rem;
-    width: 4px;
-    height: 1.2rem;
-    background: #2563eb;
-    border-radius: 2px;
-}
-/* =========================
-   Service – How it works
-========================= */
 
-.service-steps {
-    margin-top: 4rem;
+@media (max-width: 720px) {
+  .service-intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .intro-item span {
+    max-width: none;
+  }
 }
 
-.service-steps h2 {
-    margin-bottom: 2rem;
-}
-
-.steps-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-}
-
-.step-card {
-    background: #ffffff;
-    padding: 2rem;
-    border-radius: 20px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
-}
-
-.step-number {
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    color: #2563eb;
-    margin-bottom: 0.5rem;
-}
-
-.step-card h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-}
-
-.step-card p {
-    font-size: 0.95rem;
-    color: #475569;
-}
-
-@media (max-width: 900px) {
-    .steps-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 520px) {
-    .steps-grid {
-        grid-template-columns: 1fr;
-    }
-}
 /* =========================
    What we treat – cards
 ========================= */
@@ -1850,4 +1669,9 @@ body {
     .treat-grid {
         grid-template-columns: 1fr;
     }
+}
+@media (max-width: 900px) {
+  .service-layout {
+    grid-template-columns: 1fr;
+  }
 }
