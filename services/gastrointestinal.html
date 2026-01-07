@@ -20,6 +20,7 @@
     </a>
 
     
+            <button class="nav-toggle" aria-label="Menu">☰</button>
 
     <div class="language-switcher">
     <a href="#" class="lang active">EN</a> |
@@ -221,6 +222,17 @@
     </div>
   </div>
 </footer>
+
+<script>
+const navToggle = document.querySelector(".nav-toggle");
+const mainNav = document.querySelector(".main-nav");
+
+if (navToggle && mainNav) {
+  navToggle.addEventListener("click", () => {
+    mainNav.classList.toggle("open");
+  });
+}
+</script>
 
 </body>
 </html>

@@ -20,6 +20,9 @@
       <span class="logo-text">Nova Surgical Center</span>
     </a>
 
+    
+            <button class="nav-toggle" aria-label="Menu">☰</button>
+            
     <div class="language-switcher">
   <a href="#" class="active">EN</a>
   <span>|</span>
@@ -216,6 +219,18 @@
     </div>
   </div>
 </footer>
+
+<script>
+const navToggle = document.querySelector(".nav-toggle");
+const mainNav = document.querySelector(".main-nav");
+
+if (navToggle && mainNav) {
+  navToggle.addEventListener("click", () => {
+    mainNav.classList.toggle("open");
+  });
+}
+</script>
+
 
 </body>
 </html>

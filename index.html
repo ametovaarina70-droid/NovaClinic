@@ -79,7 +79,8 @@
                 </p>
                 <div class="about-actions">
     <a href="booking.html" class="btn btn--primary">Book an appointment</a>
-    <a href="services.html" class="btn btn--ghost">View services</a>
+    <a href="services/general-surgery.html" class="btn btn--ghost">
+View services</a>
 </div>
             </div>
             <img src="./assets/img/about/patient-care.png" alt="Doctor consulting patient">
@@ -339,9 +340,14 @@
     </footer>
 
       <script>
-document.querySelector(".nav-toggle").addEventListener("click", () => {
-    document.querySelector(".main-nav").classList.toggle("open");
+const navToggle = document.querySelector(".nav-toggle");
+const mainNav = document.querySelector(".main-nav");
+
+navToggle.addEventListener("click", () => {
+  mainNav.classList.toggle("open");
+  document.body.classList.toggle("menu-open");
 });
+
 </script>
 
 

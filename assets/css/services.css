@@ -25,7 +25,7 @@
 }
 .service-hero p {
   max-width: none;
-  white-space: nowrap;
+
 }
 
 
@@ -198,5 +198,42 @@
 
   .steps-grid {
     grid-template-columns: 1fr;
+  }
+}
+/* =========================
+   Mobile navigation FIX
+   for service pages
+   ========================= */
+
+@media (max-width: 720px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 1rem;
+    right: 1rem;
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    z-index: 1000;
+  }
+
+  .main-nav.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-link {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
   }
 }
