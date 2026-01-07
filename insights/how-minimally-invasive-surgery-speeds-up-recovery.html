@@ -16,7 +16,7 @@
       <span class="logo-mark">NSC</span>
       <span class="logo-text">Nova Surgical Center</span>
     </a>
-    
+
      <button class="nav-toggle" aria-label="Menu">☰</button>
 
 
@@ -91,6 +91,18 @@
     <p>© 2025 Nova Surgical Center (fictional)</p>
   </div>
 </footer>
+
+<script>
+const navToggle = document.querySelector(".nav-toggle");
+const mainNav = document.querySelector(".main-nav");
+
+if (navToggle && mainNav) {
+  navToggle.addEventListener("click", () => {
+    mainNav.classList.toggle("open");
+    document.body.classList.toggle("menu-open");
+  });
+}
+</script>
 
 </body>
 </html>
