@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Dastan Kubatbekov – Surgeon Profile</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+
+
+<!-- Header -->
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">
+            <span class="logo-mark">NSC</span>
+            <span class="logo-text">Nova Surgical Center</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Menu">☰</button>
+
+<div class="language-switcher">
+    <a href="#" class="lang active">EN</a> |
+    <a href="#" class="lang">CZ</a>
+</div>
+        <nav class="main-nav" >
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="doctors.html" class="nav-link nav-link--active">Surgeons</a></li>
+                <li><a href="booking.html" class="nav-link">Book an Appointment</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <form class="site-search" action="search-results.html" method="get" role="search">
+            <label class="visually-hidden" for="global-search">Search on this site</label>
+            <input
+                id="global-search"
+                type="search"
+                name="q"
+                class="search-input"
+                placeholder="Search procedures or surgeons"
+                aria-label="Search"
+                required
+            >
+            <button type="submit" class="btn btn--secondary">Search</button>
+        </form>
+    </div>
+</header>
+
+<main class="site-main">
+
+
+
+    <!-- Profile Section -->
+    <section class="section" aria-labelledby="profile-title">
+        <div class="container">
+            <header class="section-header">
+                <h1 id="profile-title">Dr. Dastan Kubatbekov, MD</h1>
+                <p>Vascular & Endovascular Surgery</p>
+            </header>
+
+            <article class="doctor-profile">
+                <div class="doctor-profile-main">
+                    <img
+                        src="./assets/img/doctors/dastan-kubatbekov.png"
+                        alt="Portrait of Dr. Dastan Kubatbekov"
+                        class="doctor-detail-photo"
+                    >
+
+                    <div>
+                        <h2>About the Surgeon</h2>
+                        <p>
+Dr. Dastan Kubatbekov specializes in vascular and endovascular surgery, focusing on the diagnosis and surgical treatment of diseases affecting blood vessels and circulation. His clinical practice emphasizes minimally invasive endovascular techniques combined with classical vascular surgery when required.
+                        </p>
+                        <p>
+                           He is committed to patient-centered care, clear communication, and evidence-based treatment planning to achieve long-term vascular health outcomes.
+                        </p>
+                    </div>
+                </div>
+
+                <aside class="doctor-sidebar" aria-label="Quick information">
+                    <div class="card">
+                        <h3>Quick info</h3>
+                        <ul class="doctor-info-list">
+                            <li><strong>Experience:</strong> 11+ years</li>
+                            <li><strong>Languages:</strong> English, Czech, Russian, Kyrgyz</li>
+                            <li><strong>Department:</strong> Vascular Surgery</li>
+                            <li><strong>Office:</strong> Building C, Room 305</li>
+                        </ul>
+
+                        <a href="booking.html" class="btn btn--primary" style="margin-top: 1rem;">
+                            Book appointment
+                        </a>
+                    </div>
+                </aside>
+            </article>
+        </div>
+    </section>
+
+    <!-- Procedures Table -->
+    <section class="section section--muted" aria-labelledby="procedures-title">
+        <div class="container">
+            <header class="section-header">
+                <h2 id="procedures-title">Common Procedures</h2>
+                <p>Below is an overview of procedures performed by Dr. Dastan Kubatbekov.</p>
+            </header>
+
+            <table class="procedures-table">
+                <thead>
+                    <tr>
+                        <th>Procedure</th>
+                        <th>Estimated duration</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Varicose vein surgery</td>
+                        <td>45-90 min</td>
+                        <td>Minimally invasive vascular techniques</td>
+                    </tr>
+
+                    <tr>
+                        <td>Endovascular interventions</td>
+                        <td>60–120 min</td>
+                        <td>Catheter-based procedures, faster recovery</td>
+                    </tr>
+
+                
+                    <tr>
+                        <td>Peripheral artery surgery</td>
+                        <td>90–150 min</td>
+                        <td>Restoration of blood flow to limbs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Contact Strip -->
+    <section class="section section--accent" aria-labelledby="call-action-title">
+        <div class="container contact-strip">
+            <div>
+                <h2 id="call-action-title">Need help choosing a procedure?</h2>
+                <p>Contact our coordinators and we will guide you.</p>
+            </div>
+            <div class="contact-strip-actions">
+                <a href="tel:+420123456789" class="btn btn--primary">Call +420 123 456 789</a>
+                <a href="booking.html" class="btn btn--ghost">Book online</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div class="footer-column">
+            <h2 class="footer-title">Nova Surgical Center</h2>
+            <p>
+                Fictional surgical clinic created as part of a university student project.
+                All texts and images are AI-generated for educational purposes only.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-subtitle">Navigation</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Surgeons</a></li>
+                <li><a href="booking.html">Book an Appointment</a></li>
+                <li><a href="search-results.html">Search</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-subtitle">Contact</h3>
+            <p>Green Avenue 12, Prague</p>
+            <p>Phone: <a href="tel:+420123456789">+420 123 456 789</a></p>
+            <p>Email: <a href="mailto:info@novasurgery.cz">info@novasurgery.cz</a></p>
+            <p>Opening hours: Mon–Fri 8:00–18:00</p>
+        </div>
+
+        <aside class="footer-column">
+            <h3 class="footer-subtitle">Project info</h3>
+            <p>Student project – <span class="author-name">Adelina Abdyvalieva, Ametova Arina, Akimzhan Nurbolot, Tolonov Bekzhan</span></p>
+            <p>Course: Web Design / UX</p>
+            <p>Year: 2025</p>
+        </aside>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+            <p>© 2025 Nova Surgical Center (fictional). All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.querySelector(".nav-toggle").addEventListener("click", () => {
+    document.querySelector(".main-nav").classList.toggle("open");
+});
+</script>
+
+</body>
+</html>

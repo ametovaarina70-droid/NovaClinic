@@ -11,10 +11,7 @@
 
 <header class="site-header">
 
-    <div class="language-switcher">
-    <a href="#" class="lang active">EN</a> |
-    <a href="#" class="lang">CZ</a>
-</div>
+
 
 
     <div class="container header-inner">
@@ -25,6 +22,11 @@
 
         <button class="nav-toggle" aria-label="Menu">☰</button>
 
+        <div class="language-switcher">
+            <a href="#" class="lang active">EN</a> |
+            <a href="#" class="lang">CZ</a>
+        </div>
+
         <nav class="main-nav">
             <ul class="nav-list">
                 <li><a href="index.html" class="nav-link">Home</a></li>
@@ -33,58 +35,135 @@
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
+
+            <form class="site-search" action="search-results.html" method="get" role="search">
+                <label class="visually-hidden" for="global-search">Search on this site</label>
+                <input
+                    id="global-search"
+                    type="search"
+                    name="q"
+                    class="search-input"
+                    placeholder="Search procedures or surgeons"
+                    aria-label="Search"
+                    required
+                >
+                <button type="submit" class="btn btn--secondary">Search</button>
+            </form>
     </div>
 </header>
-
 <main class="site-main">
 
-    <nav class="breadcrumbs">
-        <ol class="breadcrumbs-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="doctors.html">Surgeons</a></li>
-            <li aria-current="page">Dr. Tomas Rivera</li>
-        </ol>
-    </nav>
+  <!-- PROFILE SECTION -->
+  <section class="section" aria-labelledby="profile-title">
+    <div class="container">
 
-    <section class="section">
-        <div class="container doctor-detail-layout">
+      <header class="section-header">
 
-            <div class="doctor-main">
-                <h1>Dr. Tomas Rivera, MD</h1>
-                <p class="doctor-specialization">
-                    Trauma & Emergency Surgery
-                </p>
+      </header>
 
-                <img src="./assets/img/doctors/tomas-rivera.jpg"
-                     alt="Portrait of Dr. Tomas Rivera"
-                     class="doctor-detail-photo">
+      <article class="doctor-profile">
 
-                <h2>About the Surgeon</h2>
-                <p>
-                    Dr. Rivera is a trauma and emergency surgery specialist with over 10 years of 
-                    experience. He focuses on high-risk abdominal injuries, internal bleeding, and 
-                    critical emergency interventions.
-                </p>
+   <div class="doctor-profile-main">
+                    <img
+                        src="./assets/img/doctors/tomas-rivera.jpg"
+                        alt="Portrait of Dr. Tomas Rivera"
+                        class="doctor-detail-photo"
+                    >
 
-                <p>
-                    His surgical philosophy prioritizes fast diagnostics, immediate intervention, 
-                    and life-saving procedures performed with exceptional precision and control.
-                </p>
+                    <div>
+            <h1 id="profile-title">Dr. Tomas Rivera, MD</h1>
+            <p class="doctor-specialty">
+              Minimally Invasive &amp; Reconstructive Surgery
+            </p>
+
+            <p>
+              Dr. Tomas Rivera specializes in minimally invasive and reconstructive
+              surgical procedures with a strong emphasis on functional restoration
+              and long-term patient outcomes.
+            </p>
+
+            <p>
+              His clinical practice combines advanced laparoscopic techniques,
+              precision planning, and individualized surgical strategies tailored
+              to each patient.
+            </p>
+          </div>
+        </div>
+
+        <aside class="doctor-sidebar">
+          <div class="card">
+            <h3>Quick information</h3>
+            <ul>
+              <li><strong>Experience:</strong> 10+ years</li>
+              <li><strong>Languages:</strong> English, Czech</li>
+              <li><strong>Department:</strong> Reconstructive Surgery</li>
+              <li><strong>Office:</strong> Building A, Room 118</li>
+            </ul>
+
+            <a href="./booking.html" class="btn btn--primary">
+              Book an appointment
+            </a>
+          </div>
+        </aside>
+
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section section--muted">
+    <div class="container">
+
+      <header class="section-header">
+        <h2>Common procedures</h2>
+        <p>
+          Surgical procedures commonly performed by Dr. Rivera.
+        </p>
+      </header>
+
+      <table class="procedures-table">
+        <thead>
+          <tr>
+            <th>Procedure</th>
+            <th>Estimated duration</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Minimally invasive surgery</td>
+            <td>45–90 min</td>
+            <td>Laparoscopic techniques, faster recovery</td>
+          </tr>
+          <tr>
+            <td>Reconstructive procedures</td>
+            <td>60–120 min</td>
+            <td>Individualized surgical planning</td>
+          </tr>
+          <tr>
+            <td>Post-traumatic reconstruction</td>
+            <td>90–150 min</td>
+            <td>Staged reconstructive care</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </section>
+
+  <!-- CONTACT STRIP -->
+ <section class="section section--accent" aria-labelledby="call-action-title">
+        <div class="container contact-strip">
+            <div>
+                <h2 id="call-action-title">Need help choosing a procedure?</h2>
+                <p>Contact our coordinators and we will guide you.</p>
             </div>
-
-            <aside class="doctor-info card">
-                <h2>Quick info</h2>
-                <p><strong>Experience:</strong> 10+ years</p>
-                <p><strong>Languages:</strong> English, Spanish, Czech</p>
-                <p><strong>Department:</strong> Trauma & Emergency Surgery</p>
-                <p><strong>Office:</strong> Trauma Wing, Room 128</p>
-
-                <a href="booking.html" class="btn btn--primary mt-md">Book appointment</a>
-            </aside>
-
+            <div class="contact-strip-actions">
+                <a href="tel:+420123456789" class="btn btn--primary">Call +420 123 456 789</a>
+                <a href="booking.html" class="btn btn--ghost">Book online</a>
+            </div>
         </div>
     </section>
-
 </main>
 
 <footer class="site-footer">

@@ -1,57 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Oncologic Surgery | Nova Surgical Center</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../assets/css/styles.css">
-</head>
-<body>
 
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/services.css">
+</head>
+
+<body class="service-page">
+
+<!-- HEADER -->
 <header class="site-header">
-  <div class="container">
-    <a href="../index.html" class="logo">NovaClinic</a>
+  <div class="container header-inner">
+    <a href="../index.html" class="logo">
+      <span class="logo-mark">NSC</span>
+      <span class="logo-text">Nova Surgical Center</span>
+    </a>
+
+     <div class="language-switcher">
+      <a href="#" class="active">EN</a>
+      <span>|</span>
+      <a href="#">CZ</a>
+    </div>
+
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../doctors.html" class="nav-link">Surgeons</a></li>
+        <li><a href="../booking.html" class="nav-link">Book an Appointment</a></li>
+        <li><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+   
+        <form class="site-search" action="../search-results.html" method="get">
+      <input type="search" name="q" class="search-input" placeholder="Search procedures or surgeons" required>
+      <button type="submit" class="btn btn--secondary">Search</button>
+    </form>
+    
   </div>
 </header>
 
 <main>
-
-<section class="section">
   <div class="container">
 
-  
-    <header class="section-header">
-        <div class="service-hero">
-        
-      </div>
+    <!-- HERO -->
+    <section class="service-hero">
       <h1>Oncologic Surgery</h1>
-      <p>Surgical care as part of comprehensive cancer treatment.</p>
-    </header>
-
-    <div class="service-detail">
-      <h2>Our expertise</h2>
-      <ul>
-        <li>Tumor removal</li>
-        <li>Biopsy procedures</li>
-        <li>Collaboration with oncology specialists</li>
-      </ul>
-
       <p>
-        We work closely with oncology teams to provide coordinated and
-        patient-centered cancer care.
+        Specialized surgical care for the treatment of benign and malignant tumors.
       </p>
+    </section>
 
-      <a href="../booking.html" class="btn btn--primary">Book a consultation</a>
+    <!-- META -->
+    <div class="service-meta">
+      <div>
+        <span>Focus</span>
+        Cancer treatment
+      </div>
+      <div>
+        <span>Approach</span>
+        Multidisciplinary
+      </div>
+      <div>
+        <span>Care</span>
+        Long-term follow-up
+      </div>
     </div>
 
-  </div>
-</section>
+    <!-- MAIN LAYOUT -->
+    <section class="service-layout">
 
+      <!-- MAIN CONTENT -->
+      <div class="service-main">
+
+        <h2>About this service</h2>
+        <p>
+          Oncologic surgery focuses on the surgical management of tumors and cancerous
+          conditions, aiming to remove diseased tissue while preserving healthy structures
+          whenever possible.
+        </p>
+        <p>
+          Our approach is multidisciplinary, combining surgery with oncology,
+          radiology, and pathology to ensure precise diagnosis and treatment planning.
+        </p>
+
+        <h2>Common procedures</h2>
+
+        <div class="procedure-card">
+          <h3>Tumor excision</h3>
+          <p>Surgical removal of localized tumors with safety margins</p>
+          <div class="procedure-meta">
+            <span>⏱ 60–120 min</span>
+            <span>✔ Individual recovery plan</span>
+          </div>
+        </div>
+
+        <div class="procedure-card">
+          <h3>Lymph node dissection</h3>
+          <p>Removal of affected lymph nodes for staging and treatment</p>
+          <div class="procedure-meta">
+            <span>⏱ 90–150 min</span>
+            <span>✔ Close post-operative monitoring</span>
+          </div>
+        </div>
+
+        <div class="procedure-card">
+          <h3>Reconstructive tumor surgery</h3>
+          <p>Functional and aesthetic reconstruction following tumor removal</p>
+          <div class="procedure-meta">
+            <span>⏱ Variable</span>
+            <span>✔ Coordinated care</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="service-sidebar">
+        <h3>Why choose oncologic surgery?</h3>
+        <p>
+          Our oncologic team prioritizes safety, precision,
+          and long-term patient outcomes.
+        </p>
+
+        <ul>
+          <li>✔ Experienced oncologic surgeons</li>
+          <li>✔ Multidisciplinary treatment planning</li>
+          <li>✔ Advanced diagnostic support</li>
+          <li>✔ Continuous follow-up care</li>
+        </ul>
+
+        <a href="../booking.html" class="btn btn--primary">
+          Book a consultation
+        </a>
+      </aside>
+
+    </section>
+
+    <!-- STEPS -->
+    <section class="service-steps">
+      <h2>What to expect</h2>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <span>1</span>
+          <h4>Evaluation</h4>
+          <p>Diagnosis, imaging, and treatment planning</p>
+        </div>
+
+        <div class="step-card">
+          <span>2</span>
+          <h4>Surgical treatment</h4>
+          <p>Procedure performed with oncologic safety standards</p>
+        </div>
+
+        <div class="step-card">
+          <span>3</span>
+          <h4>Follow-up care</h4>
+          <p>Recovery monitoring and further oncologic management</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
 </main>
 
+<!-- FOOTER -->
 <footer class="site-footer">
-  <div class="container">
-    <p>© Nova Surgical Center</p>
+  <div class="container footer-inner">
+
+    <div class="footer-column">
+      <h2 class="footer-title">Nova Surgical Center</h2>
+      <p>
+        Fictional surgical clinic created as a student project.
+        All content is for educational purposes only.
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h3 class="footer-subtitle">Navigation</h3>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../doctors.html">Surgeons</a></li>
+        <li><a href="../booking.html">Book an Appointment</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3 class="footer-subtitle">Contact</h3>
+      <p>Green Avenue 12, Prague</p>
+      <p>Phone: +420 123 456 789</p>
+      <p>Email: info@novasurgery.cz</p>
+      <p>Mon–Fri 8:00–18:00</p>
+    </div>
+
+    <aside class="footer-column">
+      <h3 class="footer-subtitle">Project info</h3>
+      <p>Student project – Web Design / UX</p>
+      <p>Year: 2025</p>
+    </aside>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© 2025 Nova Surgical Center (fictional)</p>
+    </div>
   </div>
 </footer>
 

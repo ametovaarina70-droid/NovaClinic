@@ -1,59 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gastrointestinal Surgery | Nova Surgical Center</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../assets/css/styles.css">
-</head>
-<body>
 
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/services.css">
+</head>
+
+<body class="service-page">
+
+<!-- HEADER -->
 <header class="site-header">
-  <div class="container">
-    <a href="../index.html" class="logo">NovaClinic</a>
+  <div class="container header-inner">
+    <a href="../index.html" class="logo">
+      <span class="logo-mark">NSC</span>
+      <span class="logo-text">Nova Surgical Center</span>
+    </a>
+
+    
+
+    <div class="language-switcher">
+    <a href="#" class="lang active">EN</a> |
+    <a href="#" class="lang">CZ</a>
+</div>
+
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../doctors.html" class="nav-link">Surgeons</a></li>
+        <li><a href="../booking.html" class="nav-link">Book an Appointment</a></li>
+        <li><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+     <form class="site-search" action="search-results.html" method="get" role="search">
+                <label class="visually-hidden" for="global-search">Search on this site</label>
+                <input
+                    id="global-search"
+                    type="search"
+                    name="q"
+                    class="search-input"
+                    placeholder="Search procedures or surgeons"
+                    aria-label="Search"
+                    required
+                >
+                <button type="submit" class="btn btn--secondary">Search</button>
+            </form>
+    
   </div>
 </header>
 
 <main>
-
-<section class="section">
   <div class="container">
 
-    
-
-    <header class="section-header">
-      <div class="service-hero">
-      />
-</div>
-
+    <!-- HERO -->
+    <section class="service-hero">
       <h1>Gastrointestinal Surgery</h1>
-      <p>Surgical treatment of digestive system disorders.</p>
-    </header>
-
-    <div class="service-detail">
-      <h2>Conditions we treat</h2>
-      <ul>
-        <li>Gallbladder diseases</li>
-        <li>Stomach disorders</li>
-        <li>Small and large intestine conditions</li>
-      </ul>
-
       <p>
-        Our specialists provide personalized surgical care for gastrointestinal
-        conditions using modern and safe techniques.
+        Surgical treatment of digestive system disorders using modern and safe techniques.
       </p>
+    </section>
 
-      <a href="../booking.html" class="btn btn--primary">Book a consultation</a>
+    <!-- META -->
+    <div class="service-meta">
+      <div>
+        <span>Focus</span>
+        Digestive tract
+      </div>
+      <div>
+        <span>Approach</span>
+        Open & minimally invasive
+      </div>
+      <div>
+        <span>Recovery</span>
+        Individualized care
+      </div>
     </div>
 
-  </div>
-</section>
+    <!-- MAIN LAYOUT -->
+    <section class="service-layout">
 
+      <!-- MAIN CONTENT -->
+      <div class="service-main">
+
+        <h2>About this service</h2>
+        <p>
+          Gastrointestinal surgery focuses on the diagnosis and surgical treatment of
+          conditions affecting the digestive system, including the stomach, intestines,
+          appendix, and related organs.
+        </p>
+        <p>
+          Our surgeons apply evidence-based techniques and modern technologies to ensure
+          safe procedures and optimal patient outcomes.
+        </p>
+
+        <h2>Common procedures</h2>
+
+        <div class="procedure-card">
+          <h3>Appendectomy</h3>
+          <p>Removal of the appendix in cases of acute appendicitis</p>
+          <div class="procedure-meta">
+            <span>⏱ 30–60 min</span>
+            <span>✔ Short hospital stay</span>
+          </div>
+        </div>
+
+        <div class="procedure-card">
+          <h3>Bowel resection</h3>
+          <p>Surgical removal of diseased segments of the intestine</p>
+          <div class="procedure-meta">
+            <span>⏱ 90–150 min</span>
+            <span>✔ Individual recovery plan</span>
+          </div>
+        </div>
+
+        <div class="procedure-card">
+          <h3>Hernia repair</h3>
+          <p>Treatment of abdominal wall hernias affecting digestion</p>
+          <div class="procedure-meta">
+            <span>⏱ 45–90 min</span>
+            <span>✔ Fast recovery</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="service-sidebar">
+        <h3>Why choose GI surgery?</h3>
+        <p>
+          Our gastrointestinal surgical team provides comprehensive care
+          focused on safety, precision, and recovery.
+        </p>
+
+        <ul>
+          <li>✔ Experienced digestive surgeons</li>
+          <li>✔ Modern surgical facilities</li>
+          <li>✔ Personalized treatment plans</li>
+          <li>✔ Post-operative follow-up</li>
+        </ul>
+
+        <a href="../booking.html" class="btn btn--primary">
+          Book a consultation
+        </a>
+      </aside>
+
+    </section>
+
+    <!-- STEPS -->
+    <section class="service-steps">
+      <h2>What to expect</h2>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <span>1</span>
+          <h4>Consultation</h4>
+          <p>Clinical evaluation and diagnostic tests</p>
+        </div>
+
+        <div class="step-card">
+          <span>2</span>
+          <h4>Surgical procedure</h4>
+          <p>Performed using the safest appropriate technique</p>
+        </div>
+
+        <div class="step-card">
+          <span>3</span>
+          <h4>Recovery</h4>
+          <p>Monitored healing and follow-up care</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
 </main>
 
+<!-- FOOTER -->
 <footer class="site-footer">
-  <div class="container">
-    <p>© Nova Surgical Center</p>
+  <div class="container footer-inner">
+
+    <div class="footer-column">
+      <h2 class="footer-title">Nova Surgical Center</h2>
+      <p>
+        Fictional surgical clinic created as a student project.
+        All content is for educational purposes only.
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h3 class="footer-subtitle">Navigation</h3>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../doctors.html">Surgeons</a></li>
+        <li><a href="../booking.html">Book an Appointment</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3 class="footer-subtitle">Contact</h3>
+      <p>Green Avenue 12, Prague</p>
+      <p>Phone: +420 123 456 789</p>
+      <p>Email: info@novasurgery.cz</p>
+      <p>Mon–Fri 8:00–18:00</p>
+    </div>
+
+    <aside class="footer-column">
+      <h3 class="footer-subtitle">Project info</h3>
+      <p>Student project – Web Design / UX</p>
+      <p>Year: 2025</p>
+    </aside>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© 2025 Nova Surgical Center (fictional)</p>
+    </div>
   </div>
 </footer>
 

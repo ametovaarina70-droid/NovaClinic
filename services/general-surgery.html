@@ -11,17 +11,44 @@
 <body>
 
 <!-- HEADER (скопирован с главной, пути исправлены) -->
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="../index.html" class="logo">NovaClinic</a>
-    <nav class="main-nav">
-      <a href="../index.html">Home</a>
-      <a href="../doctors.html">Surgeons</a>
-      <a href="../booking.html">Book</a>
-      <a href="../contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">
+                <span class="logo-mark">NSC</span>
+                <span class="logo-text">Nova Surgical Center</span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Menu">☰</button>
+
+
+              <div class="language-switcher">
+    <a href="#" class="lang active">EN</a> |
+    <a href="#" class="lang">CZ</a>
+</div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link nav-link--active">Home</a></li>
+                    <li><a href="../doctors.html" class="nav-link">Surgeons</a></li>
+                    <li><a href="../booking.html" class="nav-link">Book an Appointment</a></li>
+                    <li><a href="../contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <form class="site-search" action="../search-results.html" method="get" role="search">
+                <label class="visually-hidden" for="global-search">Search on this site</label>
+                <input
+                    id="global-search"
+                    type="search"
+                    name="q"
+                    class="search-input"
+                    placeholder="Search procedures or surgeons"
+                    aria-label="Search"
+                    required
+                >
+                <button type="submit" class="btn btn--secondary">Search</button>
+            </form>
+        </div>
+    </header>
 
 <main class="container">
 
@@ -94,8 +121,8 @@
         <li>✔ Short recovery time</li>
       </ul>
 
-      <a href="../booking.html" class="btn-primary">
-        Schedule Appointment
+      <a href="../booking.html" class="btn btn--primary">
+        Book a consultation
       </a>
     </aside>
 
@@ -129,11 +156,52 @@
 </main>
 
 <!-- FOOTER (скопирован с главной, пути исправлены) -->
-<footer class="site-footer">
-  <div class="container">
-    <p>© Nova Surgical Center · Educational project 2025</p>
-  </div>
-</footer>
+  <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-column">
+                <h2 class="footer-title">Nova Surgical Center</h2>
+                <p>
+                    Fictional surgical clinic created as part of a university student project.
+                    All texts and images are AI-generated for educational purposes only.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="footer-subtitle">Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../doctors.html">Surgeons</a></li>
+                    <li><a href="../booking.html">Book an Appointment</a></li>
+                    <li><a href="../search-results.html">Search</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="footer-subtitle">Contact</h3>
+                <p>Green Avenue 12, Prague</p>
+                <p>Phone: <a href="tel:+420123456789">+420 123 456 789</a></p>
+                <p>Email: <a href="mailto:info@novasurgery.cz">info@novasurgery.cz</a></p>
+                <p>Opening hours: Mon–Fri 8:00–18:00</p>
+            </div>
+
+            <aside class="footer-column" aria-label="Project information">
+                <h3 class="footer-subtitle">Project info</h3>
+                <p>Student project – <span class="author-name">Adelina Abdyvalieva, Ametova Arina, Akimzhan Nurbolot, Tolonov Bekzhan</span></p>
+                <p>Course: Web Design / UX</p>
+                <p>Year: 2025</p>
+            </aside>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>© 2025 Nova Surgical Center (fictional). All rights reserved.</p>
+                <p class="footer-note">
+                    This website is a non-commercial prototype created for educational purposes.
+                </p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

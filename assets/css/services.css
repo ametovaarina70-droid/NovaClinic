@@ -1,16 +1,33 @@
 /* =========================
    Service pages (NEW)
 ========================= */
+.service-page main {
+  background: var(--color-bg);
+}
+
+.service-page h1,
+.service-page h2,
+.service-page h3,
+.service-page p {
+  max-width: none;
+}
 
 .service-hero {
   max-width: 720px;
   margin: 3rem 0 2rem;
+   padding-bottom: 2rem;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .service-hero h1 {
   font-size: 2.6rem;
   margin-bottom: 0.75rem;
 }
+.service-hero p {
+  max-width: none;
+  white-space: nowrap;
+}
+
 
 /* META LINE */
 .service-meta {
@@ -22,6 +39,20 @@
   border-bottom: 1px solid #e5e7eb;
   margin-bottom: 3rem;
 }
+.service-meta > div {
+  position: relative;
+}
+
+.service-meta > div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -1rem;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: #e5e7eb;
+}
+
 
 .service-meta span {
   display: block;
@@ -62,6 +93,17 @@
   font-size: 0.85rem;
   margin-top: 0.75rem;
 }
+.procedure-card h3 {
+  font-size: 1.1rem;
+}
+
+.procedure-card {
+  transition: box-shadow 0.2s ease;
+}
+
+.procedure-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
 
 /* SIDEBAR */
 .service-sidebar {
@@ -71,15 +113,46 @@
   border-radius: 24px;
 }
 
+.service-sidebar h2,
+.service-sidebar h3,
+.service-sidebar p,
+.service-sidebar li {
+  color: #ffffff;
+}
 .service-sidebar ul {
   list-style: none;
   padding: 0;
   margin: 1.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+  padding-bottom: 1.5rem;
 }
 
 .service-sidebar li {
   margin-bottom: 0.5rem;
 }
+.service-sidebar p,
+.service-sidebar li {
+  line-height: 1.5;
+}
+.service-sidebar li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.service-sidebar .btn--primary {
+  width: 100%;
+  justify-content: center;
+  background: #ffffff;
+  color: #1e5eff;
+  border-radius: 999px;
+  box-shadow: none;
+}
+
+.service-sidebar .btn--primary:hover {
+  background: #e0e7ff;
+}
+
 
 /* STEPS */
 .service-steps {
@@ -98,10 +171,19 @@
   border-radius: 16px;
   border: 1px solid #e5e7eb;
 }
-
+.service-steps h2 {
+  margin-bottom: 2rem;
+}
 .step-card span {
   font-weight: 700;
   color: #1e5eff;
+   display: inline-flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e0e7ff;
 }
 
 /* MOBILE */

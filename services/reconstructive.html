@@ -1,58 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reconstructive Surgery | Nova Surgical Center</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../assets/css/styles.css">
-</head>
-<body>
 
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/services.css">
+</head>
+
+<body class="service-page">
+
+<!-- HEADER -->
 <header class="site-header">
-  <div class="container">
-    <a href="../index.html" class="logo">NovaClinic</a>
+  <div class="container header-inner">
+    <a href="../index.html" class="logo">
+      <span class="logo-mark">NSC</span>
+      <span class="logo-text">Nova Surgical Center</span>
+    </a>
+
+    <div class="language-switcher">
+      <a href="#" class="active">EN</a>
+      <span>|</span>
+      <a href="#">CZ</a>
+    </div>
+
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../doctors.html" class="nav-link">Surgeons</a></li>
+        <li><a href="../booking.html" class="nav-link">Book an Appointment</a></li>
+        <li><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+                <form class="site-search" action="search-results.html" method="get" role="search">
+                <label class="visually-hidden" for="global-search">Search on this site</label>
+                <input
+                    id="global-search"
+                    type="search"
+                    name="q"
+                    class="search-input"
+                    placeholder="Search procedures or surgeons"
+                    aria-label="Search"
+                    required
+                >
+                <button type="submit" class="btn btn--secondary">Search</button>
+            </form>
+    
   </div>
 </header>
 
 <main>
-
-<section class="section">
   <div class="container">
 
-   
-
-    <header class="section-header">
-
-        <div class="service-hero">
-    </div>
+    <!-- HERO -->
+    <section class="service-hero">
       <h1>Reconstructive Surgery</h1>
-      <p>Restoring form and function after injury or complex surgery.</p>
-    </header>
-
-    <div class="service-detail">
-      <h2>What we offer</h2>
-      <ul>
-        <li>Post-traumatic reconstruction</li>
-        <li>Corrective surgical procedures</li>
-        <li>Functional restoration</li>
-      </ul>
-
       <p>
-        Our goal is to help patients regain both physical function and
-        confidence after complex surgical procedures.
+        Surgical restoration of form and function following trauma, disease, or surgery.
       </p>
+    </section>
 
-      <a href="../booking.html" class="btn btn--primary">Book a consultation</a>
+    <!-- META -->
+    <div class="service-meta">
+      <div>
+        <span>Focus</span>
+        Functional restoration
+      </div>
+      <div>
+        <span>Approach</span>
+        Individualized planning
+      </div>
+      <div>
+        <span>Care</span>
+        Long-term outcomes
+      </div>
     </div>
+
+    <!-- MAIN LAYOUT -->
+    <section class="service-layout">
+
+      <!-- MAIN CONTENT -->
+      <div class="service-main">
+
+        <h2>About this service</h2>
+        <p>
+          Reconstructive surgery aims to restore both appearance and functionality
+          after injury, tumor removal, congenital conditions, or complex surgical
+          interventions.
+        </p>
+        <p>
+          Our surgeons focus on personalized treatment plans that consider medical,
+          functional, and aesthetic outcomes.
+        </p>
+
+        <h2>Common procedures</h2>
+
+        <div class="procedure-card">
+          <h3>Post-traumatic reconstruction</h3>
+          <p>Restoration of tissues and structures damaged by injury</p>
+          <div class="procedure-meta">
+            <span>⏱ Variable</span>
+            <span>✔ Staged recovery</span>
+          </div>
+        </div>
+
+        <div class="procedure-card">
+          <h3>Post-oncologic reconstruction</h3>
+          <p>Reconstruction following tumor removal procedures</p>
+          <div class="procedure-meta">
+            <span>⏱ Variable</span>
+            <span>✔ Coordinated care</span>
+          </div>
+        </div>
+
+        <div class="procedure-card">
+          <h3>Soft tissue repair</h3>
+          <p>Correction of soft tissue defects and functional impairment</p>
+          <div class="procedure-meta">
+            <span>⏱ 60–120 min</span>
+            <span>✔ Individual recovery plan</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="service-sidebar">
+        <h3>Why choose reconstructive surgery?</h3>
+        <p>
+          Our reconstructive approach emphasizes precision,
+          patient-centered planning, and long-term functionality.
+        </p>
+
+        <ul>
+          <li>✔ Multidisciplinary surgical expertise</li>
+          <li>✔ Personalized reconstruction plans</li>
+          <li>✔ Functional and aesthetic focus</li>
+          <li>✔ Comprehensive post-operative care</li>
+        </ul>
+
+        <a href="../booking.html" class="btn btn--primary">
+          Book a consultation
+        </a>
+      </aside>
+
+    </section>
+
+    <!-- STEPS -->
+    <section class="service-steps">
+      <h2>What to expect</h2>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <span>1</span>
+          <h4>Assessment</h4>
+          <p>Evaluation of condition and reconstruction goals</p>
+        </div>
+
+        <div class="step-card">
+          <span>2</span>
+          <h4>Surgical planning</h4>
+          <p>Customized surgical and recovery strategy</p>
+        </div>
+
+        <div class="step-card">
+          <span>3</span>
+          <h4>Recovery & follow-up</h4>
+          <p>Monitoring healing and functional outcomes</p>
+        </div>
+      </div>
+    </section>
 
   </div>
-</section>
-
 </main>
 
+<!-- FOOTER -->
 <footer class="site-footer">
-  <div class="container">
-    <p>© Nova Surgical Center</p>
+  <div class="container footer-inner">
+
+    <div class="footer-column">
+      <h2 class="footer-title">Nova Surgical Center</h2>
+      <p>
+        Fictional surgical clinic created as a student project.
+        All content is for educational purposes only.
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h3 class="footer-subtitle">Navigation</h3>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../doctors.html">Surgeons</a></li>
+        <li><a href="../booking.html">Book an Appointment</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3 class="footer-subtitle">Contact</h3>
+      <p>Green Avenue 12, Prague</p>
+      <p>Phone: +420 123 456 789</p>
+      <p>Email: info@novasurgery.cz</p>
+      <p>Mon–Fri 8:00–18:00</p>
+    </div>
+
+    <aside class="footer-column">
+      <h3 class="footer-subtitle">Project info</h3>
+      <p>Student project – Web Design / UX</p>
+      <p>Year: 2025</p>
+    </aside>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© 2025 Nova Surgical Center (fictional)</p>
+    </div>
   </div>
 </footer>
 
